@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Generate Foto</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<h2>Generate Prompt Foto</h2>
+<form id="fotoForm">
+<input id="subjek" placeholder="Subjek">
+<input id="objek" placeholder="Objek">
+<input id="lokasi" placeholder="Lokasi">
+
+<select id="rasio"><option>1:1</option><option>3:4</option><option>9:16</option></select>
+<select id="tema"><option>Portrait</option><option>Fashion</option><option>Produk</option><option>Cinematic</option></select>
+<select id="mood"><option>Moody</option><option>Bright</option><option>Dramatic</option></select>
+<select id="style"><option>Realistic</option><option>Editorial</option><option>Film Still</option></select>
+<select id="lighting"><option>Studio</option><option>Natural</option><option>Cinematic</option></select>
+<select id="komposisi"><option>Rule of Thirds</option><option>Center</option></select>
+<select id="shot"><option>Close Up</option><option>Medium Shot</option><option>Wide Shot</option></select>
+
+<label><input type="checkbox" id="boostWajah"> Boost Wajah</label>
+<label><input type="checkbox" id="boostProduk"> Boost Produk</label>
+<label><input type="checkbox" id="boostFashion"> Boost Fashion</label>
+
+<button type="submit">Generate</button>
+</form>
+<script src="../assets/js/generatefoto.js"></script>
+</body>
+</html>
