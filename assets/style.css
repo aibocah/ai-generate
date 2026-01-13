@@ -1,0 +1,9 @@
+
+body{margin:0;font-family:Inter,Arial;background:#07070c;color:#fff}
+header{text-align:center;padding:20px;background:#0f0f18}
+main{display:grid;grid-template-columns:1fr 1fr;height:calc(100vh - 100px)}
+section{padding:20px}
+textarea,select,button{width:100%;margin-top:10px;padding:12px;border-radius:8px;border:none}
+textarea{height:120px}
+.output textarea{height:70vh;background:#0b0b12;color:#00ffcc}
+button{background:#7c3aed;color:#fff;font-weight:600}
