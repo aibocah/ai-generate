@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>AI Generate PRO Studio</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+  <h1>AI Generate PRO Studio</h1>
+  <p>Foto • Video • Flow • Auto • Hybrid</p>
+</header>
+
+<nav>
+<select id="mode">
+<option value="auto">AUTO</option>
+<option value="manual">MANUAL</option>
+<option value="hybrid" selected>HYBRID PRO</option>
+</select>
+
+<select id="type">
+<option value="photo">Generate Foto</option>
+<option value="video">Generate Video</option>
+</select>
+</nav>
+
+<main>
+<section class="left">
+<h3>Ide Utama</h3>
+<textarea id="idea" placeholder="Contoh: Video iklan kopi pagi yang hangat dan sinematik"></textarea>
+
+<label><input type="checkbox" id="boostFace"> Boost Wajah</label>
+<label><input type="checkbox" id="boostProduct"> Boost Produk</label>
+<label><input type="checkbox" id="boostFashion"> Boost Fashion</label>
+
+<h3>Timeline (Video)</h3>
+<div id="scenes"></div>
+<button onclick="addScene()">+ Scene</button>
+</section>
+
+<section class="right">
+<h3>Output (Flow / JSON)</h3>
+<textarea id="output"></textarea>
+<button onclick="copy()">Copy</button>
+</section>
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
