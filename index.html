@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cinematic AI Studio</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <h1>Cinematic AI Studio</h1>
+  <p>Idea → Intent → Scene → Flow Ultra</p>
+</header>
+
+<main>
+<section class="input">
+<h2>One Sentence Idea</h2>
+<textarea id="idea" placeholder="Contoh: Video cinematic kopi pagi untuk iklan Instagram"></textarea>
+
+<h2>Video Goal</h2>
+<select id="goal">
+<option>Hook</option>
+<option>Problem</option>
+<option>Storytelling</option>
+<option>Product Reveal</option>
+<option>CTA</option>
+</select>
+
+<h2>Platform</h2>
+<select id="platform">
+<option>Instagram Reels</option>
+<option>TikTok</option>
+<option>YouTube Shorts</option>
+<option>YouTube Cinematic</option>
+</select>
+
+<button onclick="generate()">Generate Cinematic Timeline</button>
+</section>
+
+<section class="output">
+<h2>Flow Ultra Output</h2>
+<textarea id="result"></textarea>
+<button onclick="copy()">Copy</button>
+</section>
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
